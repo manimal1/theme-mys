@@ -1,0 +1,65 @@
+@import '../layout/variables';
+@import '../layout/mixins';
+
+.social-links {
+  position: absolute;
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $color-grey-3;
+  z-index: 100;
+}
+
+.social-media {
+  position: relative;
+  // display: inline-block;
+  // width: auto;
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  &__icon-container {
+    display: inline-block;
+    margin: 0 20px;
+
+    @include mobile {
+      margin: 0 5px;
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-right: 10px;
+    color: $color-dark-main;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-main;
+    }
+
+    &--30 {
+      font-size: 30px;
+    }
+  }
+
+  &__icon-container {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.select2-container {
+  min-width: 300px !important;
+  
+  &.class123-select {
+    width: 100%;
+    min-width: 100%;
+  }
+}

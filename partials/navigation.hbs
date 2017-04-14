@@ -1,0 +1,14 @@
+<ul id="slide-out" class="side-nav">
+<li>
+    <div class="userView">
+        <div class="background">
+            <img src="{{asset "images/logo.png"}}">
+        </div>
+    </div>
+</li>
+{{#foreach navigation}}
+    <li class="nav-{{slug}}{{#if current}} active{{/if}} card--custom" role="presentation">
+        <a href="{{url absolute="true"}}">{{label}}</a>
+    </li>
+{{/foreach}}
+</ul>

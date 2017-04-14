@@ -1,0 +1,20 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header --}}
+{{> "headers/header-main"}}
+
+{{!-- The main content area on the homepage --}}
+<main id="content" class="content content--pad-vertical" role="main">
+    {{!< page}}
+    
+    <div class="container" style="width: 90%;">
+        <div class="row">
+            <div class="col sm12">
+                {{> "loop"}}
+            </div>
+        </div>
+    </div>
+</main>
+
+{{> "footer"}}

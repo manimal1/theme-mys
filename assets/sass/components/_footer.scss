@@ -1,0 +1,70 @@
+@import '../layout/variables';
+@import '../layout/mixins';
+
+footer {
+
+    &.page-footer {
+        background-color: $color-dark-main;
+        color: $color-grey-3;
+        height: $footer-height + 20px;
+        padding: 20px 0 0 0;
+
+        &__top-link {
+            color: $color-dark-main;
+            
+            &:hover {
+                color: $color-main;
+            }
+        }
+
+        .container,
+        .row,
+        .col--flex {
+            height: 50px;
+        }
+
+        .col--flex {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .social-media__icon {
+            color: $color-grey-3;
+
+            &:hover {
+                color: $color-main;
+            }
+        }
+
+        .modal__button {
+            background-color: $color-grey-3;
+            color: $color-dark-main;
+
+            &:hover {
+                background-color: $color-main;
+                color: $color-grey-3;
+            }
+        }
+    }
+
+    .page-footer__row {
+        margin: 0;
+        height: 50px;
+    }
+
+    .page-footer__column--centered {
+        width: 100%;
+        text-align: center;
+    }
+
+    .page-footer__contact-info {
+        display: inline-block;
+        font-size: 12px;
+
+        &:hover {
+            color: $color-main;
+        }
+    }
+}

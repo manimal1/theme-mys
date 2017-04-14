@@ -1,0 +1,91 @@
+@import '../layout/variables';
+
+.button {
+  border: 1px solid $color-dark-main;
+  border-radius: 3px;
+  padding: 10px 20px;
+  background: transparent;
+  color: $color-dark-main;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-dark-main;
+    color: $color-grey-1;
+  }
+}
+
+.button--inverse {
+  @extend .button;
+  color: $color-grey-1;
+  background: $color-dark-main;
+}
+
+.button--subscribe {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    height: 38px;
+    padding: 0 20px;
+    color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
+    text-align: center;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 35px;
+    // border-radius: 3px;
+    background: $color-white;
+    transition: all ease 0.3s;
+
+    &:before {
+      font-size: 9px;
+      margin-right: 6px;
+    }
+}
+
+.button--secondary {
+  border-color: $color-main;
+  color: $color-main;
+  
+  &:hover {
+    background: $color-main;
+  }
+}
+
+.btn-floating.halfway-fab {
+  background-color: $color-main;
+
+  &:hover {
+    background-color: lighten( $color-main, 5% );
+  }
+}
+
+.modal__button {
+  margin: 10px;
+  border-radius: 3px;
+
+  &:hover {
+    color: #fff;
+    background-color: $color-main;
+    border-color: $color-main;
+  }
+
+  &--dark {
+    background-color: $color-dark-main;
+    color: #fff;
+  }
+
+  &--clear {
+    background-color: transparent;
+    border: 1px solid $color-dark-main;
+    color: $color-dark-main;
+  }
+}

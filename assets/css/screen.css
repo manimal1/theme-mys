@@ -1,0 +1,1020 @@
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
+/*
+    1.  Single Post
+    2.  Author Profile
+    3.  Read Next
+    4.  Third Party Elements
+    5.  Subscribe
+    6.  Footer
+    7. Media Queries (Tablet)
+    8. Media Queries (Mobile)
+    9. Animations
+*/
+
+/* ==========================================================================
+   1. Single Post - When you click on an individual post
+   ========================================================================== */
+
+.post-template .post-header {
+   margin-bottom: 1.4rem;
+}
+
+.post-template .post-title {
+    margin-bottom: 0;
+    font-size: 6rem;
+}
+
+.post-template .post-meta {
+    margin: 0;
+}
+
+.post-template .post-date {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.post-template .tags-content {
+    margin-top: 1.5rem;
+}
+
+/* Stop elements, such as img wider than the post content, from
+   creating horizontal scroll - slight hack due to imperfections
+   with browser width % calculations and rounding */
+.post-template .content {
+    overflow: hidden;
+    overflow: hidden;
+    width: 60%;
+    margin: 4rem auto;
+}
+
+/* Tweak the .post wrapper style */
+.post-template .post {
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.post-template .post .post-content {
+    margin-top: 5rem;
+}
+/* Kill that stylish little circle that was on the border, too */
+.post-template .post:after {
+    display: none;
+}
+
+/* Keep images centered, and allow images wider than the main
+   text column to break out. */
+.post-content img {
+    display: block;
+    max-width: 126%;
+    height: auto;
+    padding: 0.6em 0;
+    /* Centers an image by (1) pushing its left edge to the
+       center of its container and (2) shifting the entire image
+       in the opposite direction by half its own width.
+       Works for images that are larger than their containers. */
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* for Safari and iOS */
+    -ms-transform: translateX(-50%); /* for IE9 */
+    transform: translateX(-50%);
+}
+
+.footnotes {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+}
+
+.footnotes li {
+    margin: 0.6rem 0;
+}
+
+.footnotes p {
+    margin: 0;
+}
+
+.footnotes p a:last-child {
+    text-decoration: none;
+}
+
+
+/* The author credit area after the post */
+.post-footer {
+    position: relative;
+    margin: 8rem 0 0 0;
+    padding: 3rem 0 0 0;
+    border-top: #EBF2F6 1px solid;
+}
+
+.post-footer h4 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.post-footer p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.75em;
+}
+
+/* list of author links - location / url */
+.author-meta {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-style: italic;
+    color: #9EABB3;
+}
+
+.author-meta a {
+    color: #9EABB3;
+}
+.author-head .author-meta a {
+    color: #9EABB3!important;
+}
+
+.author-meta a:hover {
+    color: #111;
+}
+
+/* Create some space to the right for the share links */
+.post-footer .author {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.post-footer h4 a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.post-footer h4 a:hover {
+    text-decoration: underline;
+}
+
+/* Drop the share links in the space to the right.
+   Doing it like this means it's easier for the author bio
+   to be flexible at smaller screen sizes while the share
+   links remain at a fixed width the whole time */
+.post-footer .share {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 140px;
+}
+
+.post-footer .share a {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 1rem 1.6rem 1.6rem 0;
+    color: #BBC7CC;
+    text-decoration: none;
+}
+
+.post-footer .share .icon-twitter:hover {
+    color: #55acee;
+}
+.post-footer .share .icon-facebook:hover {
+    color: #3b5998;
+}
+.post-footer .share .icon-google-plus:hover {
+    color: #dd4b39;
+}
+
+
+/* ==========================================================================
+   2. Author profile
+   ========================================================================== */
+
+.post-head.main-header {
+    min-height: 180px;
+    height: 50vh;
+}
+.no-cover.post-head.main-header {
+    height: 25rem;
+    min-height: 0;
+    margin-bottom: 0;
+    background: transparent;
+}
+
+.tag-head.main-header {
+
+}
+
+.author-head.main-header {
+
+}
+
+.no-cover.author-head.main-header {
+    height: 10vh;
+    min-height: 100px;
+    background: transparent;
+}
+
+.author-profile {
+    padding: 0 15px 5rem 15px;
+    text-align: center;
+}
+
+.author-image {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 6px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: #E7EEF2 0 0 0 1px;
+}
+
+.author-image .img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+}
+
+.author-profile .author-image {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 120px;
+    height: 120px;
+    padding: 3px;
+    margin: -100px auto 0 auto;
+    box-shadow: none;
+}
+
+.author-title {
+    margin: 1.5rem 0 1rem;
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.author-bio {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    font-weight: 200;
+    color: #50585D;
+    letter-spacing: 0;
+    text-indent: 0;
+}
+
+.author-meta {
+    margin: 1.6rem 0;
+}
+/* Location, website, and link */
+.author-profile .author-meta {
+    margin: 2rem 0;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.01rem;
+    font-size: 1.7rem;
+}
+.author-meta span {
+    display: inline-block;
+    margin: 0 2rem 1rem 0;
+    word-wrap: break-word;
+}
+.author-meta a {
+    text-decoration: none;
+}
+
+/* Turn off meta for page2+ to make room for extra
+   pagination prev/next links */
+.archive-template .author-profile .author-meta {
+    display: none;
+}
+
+
+/* ==========================================================================
+   3. Read More - Next/Prev Post Links
+   ========================================================================== */
+
+.read-next {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin-top: 10rem;
+}
+
+.read-next-story {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-width: 50%;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.read-next-story:hover:before {
+    background: rgba(0,0,0,0.8);
+    transition: all 0.2s ease;
+}
+.read-next-story:hover .post:before {
+    color: #222;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.read-next-story:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+}
+
+.read-next-story .post {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.read-next-story .post:before {
+    content: "Read This Next";
+    padding: 4px 10px 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(255,255,255,0.8);
+    border: rgba(255,255,255,0.5) 1px solid;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+.read-next-story.prev .post:before {
+    content: "You Might Enjoy";
+}
+
+.read-next-story h2 {
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.read-next-story p {
+    margin: 0;
+    color: rgba(255,255,255,0.8);
+}
+
+/* Special styles for posts with no cover images */
+.read-next-story.no-cover {
+    background: #f5f8fa;
+}
+
+.read-next-story.no-cover:before {
+    display: none;
+}
+
+.read-next-story.no-cover .post:before {
+    color: rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.2);
+}
+
+.read-next-story.no-cover h2 {
+    color: rgba(0,0,0,0.8);
+}
+
+.read-next-story.no-cover p {
+    color: rgba(0,0,0,0.5);
+}
+
+/* if there are two posts without covers, put a border between them */
+.read-next-story.no-cover + .read-next-story.no-cover {
+    border-left: rgba(0,0,100,0.04) 1px solid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   4. Third Party Elements - Embeds from other services
+   ========================================================================== */
+
+/* Github */
+.gist table {
+    margin: 0;
+    font-size: 1.4rem;
+    text-rendering: auto;
+}
+.gist td {
+    line-height: 1.4;
+}
+.gist .line-number {
+    min-width: 25px;
+}
+
+/* Pastebin */
+.content .embedPastebin {
+    margin-bottom: 1.75em;
+}
+
+
+/* ==========================================================================
+   5. Subscribe - Generate those email subscribers
+   ========================================================================== */
+
+.gh-subscribe {
+    border: #e7eef2 1px solid;
+    padding: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    background: #f5f8fa;
+    border-radius: 5px;
+}
+
+.gh-subscribe-title {
+    margin-bottom: 0;
+    font-size: 2.4rem
+}
+
+.gh-subscribe p {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.gh-subscribe form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.gh-subscribe .form-group {
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.gh-subscribe .subscribe-email {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    border-radius: 4px 0 0 4px;
+    transition: all ease 0.5s;
+}
+
+.gh-subscribe .subscribe-email:focus {
+    border: #5ba4e5 1px solid;
+    transition: all ease 0.2s;
+}
+
+.gh-subscribe button {
+    margin-left: -1px;
+    border-radius: 0 4px 4px 0;
+}
+
+.gh-subscribe-rss {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+}
+
+/* ==========================================================================
+   6. Footer - The bottom of every page
+   ========================================================================== */
+
+.site-footer {
+    position: relative;
+    padding: 1rem 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.75em;
+    color: #BBC7CC;
+    background-color: #2c3e50;
+}
+
+.site-footer a {
+    color: #BBC7CC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer a:hover {
+    border-bottom: #bbc7cc 1px solid;
+}
+
+.copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   7. Media Queries - Smaller than 900px
+   ========================================================================== */
+
+@media only screen and (max-width: 900px) {
+
+    blockquote {
+        margin-left: 0;
+    }
+    .post-template .post-title {
+        font-size: 3.6rem;
+    }
+    .main-header {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+        min-height: 240px;
+        height: 100vh;
+        padding: 15% 0;
+    }
+
+    .scroll-down,
+    .home-template .main-header:after { display: none; }
+
+    .archive-template .main-header {
+        min-height: 180px;
+        padding: 10% 0;
+    }
+
+    .blog-logo img {
+        padding: 4px 0;
+    }
+
+    .page-title {
+        font-size: 4rem;
+        letter-spacing: -1px;
+    }
+
+    .page-description {
+        font-size: 1.8rem;
+        line-height: 1.5em;
+    }
+    .post-template .content {
+        width:80%;
+    }
+    .post {
+        font-size: 0.95em
+    }
+
+    body:not(.post-template) .post-title {
+        font-size: 3.2rem;
+    }
+
+    hr {
+        margin: 2.4em 0;
+    }
+
+    ol, ul {
+        padding-left: 2em;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        text-indent: -2px;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    h3 {
+        font-size: 3.1rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 2.2rem;
+    }
+
+    h6 {
+        font-size: 1.8rem;
+    }
+
+    .author-profile {
+        padding-bottom: 4rem;
+    }
+
+    .author-profile .author-bio {
+        font-size: 1.6rem;
+    }
+
+    .author-meta span {
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .author-profile .author-meta span {
+        font-size: 1.6rem;
+    }
+
+    .post-head.main-header {
+        height:45vh;
+    }
+
+    .tag-head.main-header,
+    .author-head.main-header {
+        height: 100vh;
+    }
+
+    .no-cover.post-head.main-header {
+        height: 350px;
+        padding: 0;
+    }
+
+    .no-cover.author-head.main-header {
+        padding: 0;
+    }
+
+    .gh-subscribe {
+        padding: 2rem;
+    }
+
+    .gh-subscribe-title {
+        font-size: 2rem
+    }
+
+    .gh-subscribe p {
+        font-size: 1.4rem;
+    }
+
+    .read-next {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .read-next p {
+        display: none;
+    }
+
+    .read-next-story.no-cover + .read-next-story.no-cover {
+        border-top: rgba(0,0,100,0.06) 1px solid;
+        border-left: none;
+    }
+    .author-profile .author-image {
+        margin: 0 auto 0 auto;
+    }
+
+    .tab_dis-n {
+      display: none;
+    }
+}
+
+
+/* ==========================================================================
+   8. Media Queries - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+
+    .main-header {
+        height: 100vh;
+    }
+    .author-meta {
+        display:none;
+
+    }
+
+    .no-cover.main-header {
+        height: 30vh;
+    }
+    .post-template .content {
+        width: 90%;
+    }
+    .archive-template .main-header {
+        max-height: 20vh;
+        min-height: 160px;
+        padding: 10% 0;
+    }
+
+    .main-nav {
+        padding: 5px;
+        margin-bottom: 2rem;
+    }
+
+    .blog-logo {
+        padding: 5px;
+    }
+
+    .blog-logo img {
+        height: 30px;
+    }
+    body.nav-opened .menu-button {
+        background: none;
+        border: transparent;
+    }
+
+    .main-nav.overlay a:hover {
+        color: #fff;
+        border-color: transparent;
+        background: transparent;
+    }
+    .post-meta a:nth-child(n+2) {
+        display:none;
+    }
+    .no-cover .main-nav.overlay {
+        background: none;
+    }
+
+    .nav-title {
+        top: 25px;
+
+    }
+
+    .nav-close {
+        position: absolute;
+        top: 18px;
+    }
+
+    .nav ul {
+        padding: 60px 0% 5%;
+    }
+
+    .inner,
+    .pagination {
+        width: auto;
+    }
+
+    .post {
+        width: auto;
+        line-height: 1.65em;
+    }
+
+    .post-header .post-title{
+        font-size: 3rem;
+    }
+    .post-date {
+        display: none;
+    }
+
+    .post-template .post-header {
+        margin-bottom: 2rem;
+    }
+
+    .post-template .post-date {
+        display: inline-block;
+    }
+
+    hr {
+        margin: 1.75em 0;
+    }
+
+    p, ul, ol, dl {
+        font-size: 0.95em;
+        margin: 0 0 2.5rem 0;
+    }
+
+    .page-title {
+        font-size: 3rem;
+    }
+
+    .post-excerpt p {
+        font-size: 0.85em;
+    }
+
+    .page-description {
+        font-size: 1.6rem;
+    }
+
+    h1, h2, h3,
+    h4, h5, h6 {
+        margin: 0 0 0.3em 0;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        letter-spacing: -1px;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        letter-spacing: 0;
+    }
+
+    h3 {
+        font-size: 2.1rem;
+    }
+
+    h4 {
+        font-size: 1.9rem;
+    }
+
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    h6 {
+        font-size: 1.8rem;
+    }
+
+    body:not(.post-template) .post-title {
+        font-size: 2.5rem;
+    }
+
+    .post-template .site-footer {
+        margin-top: 0;
+    }
+
+    .post-content img {
+        padding: 0;
+        width: calc(100% + 32px); /* expand with to image + margins */
+        min-width: 0;
+        max-width: 112%; /* fallback when calc doesn't work */
+    }
+
+    .post-meta {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    .post-footer {
+        padding: 5rem 0 3rem 0;
+        text-align: center;
+    }
+
+    .post-footer .author {
+        margin: 1rem 0 2rem 0;
+        padding: 0 0 1.6rem 0;
+        border-bottom: #EBF2F6 1px dashed;
+    }
+
+    .post-footer .share {
+        position: static;
+        width: auto;
+    }
+
+    .post-footer .share a {
+        margin: 1.4rem 0.8rem 0 0.8rem;
+    }
+
+    .author-meta li {
+        float: none;
+        margin: 0;
+        line-height: 1.75em;
+    }
+
+    .author-meta li:before {
+        display: none;
+    }
+
+    .older-posts,
+    .newer-posts {
+        position: static;
+    }
+
+    .page-number {
+        display: block;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .pagination-bg {
+        padding: 1rem 0;
+    }
+    .author-profile {
+        padding-bottom: 2rem;
+    }
+
+    .post-head.main-header {
+        height: 100vh;
+    }
+
+    .tag-head.main-header,
+    .author-head.main-header {
+        height: 100vh;
+    }
+
+    .post-footer .author-image {
+        top: -60px;
+    }
+
+    .author-profile .author-image {
+        display:none;
+    }
+
+    .author-profile .author-meta span {
+        font-size: 1.4rem;
+    }
+
+    .archive-template .main-header .page-description {
+        display: none;
+    }
+
+    .gh-subscribe {
+        padding: 15px;
+    }
+
+    .gh-subscribe form {
+        margin-top: 10px;
+    }
+
+    .read-next {
+        margin-top: 2rem;
+        margin-bottom: -37px;
+    }
+
+    .read-next .post {
+        width: 100%;
+    }
+
+    .mob_dis-n {
+      display: none;
+    }
+}
+
+
+/* ==========================================================================
+   9. Animations
+   ========================================================================== */
+
+/* Used to fade in title/desc on the home page */
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* Used to bounce .scroll-down on home page */
+@-webkit-keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
+    }
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
+    }
+}
+@keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
+    }
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
+    }
+}
+
+
+/* ==========================================================================
+   End of file. Animations should be the last thing here. Do not add stuff
+   below this point, or it will probably fuck everything up.
+   ========================================================================== */

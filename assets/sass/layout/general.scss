@@ -1,0 +1,527 @@
+@import './variables';
+@import './mixins';
+
+/* ==========================================================================
+   4. General - The main styles for the the theme
+   ========================================================================== */
+
+a {
+    color: inherit;
+    text-transform: none;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+
+    .container {
+        width: 100%;
+    }
+}
+
+.content--pad-vertical {
+    padding: 40px 0;
+}
+
+.content--pad-bottom {
+    padding-bottom: $footer-height;
+}
+
+._background-alpha {
+  background: #F0F0F0;
+  color: #30302E;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: auto;
+  bottom: auto;
+  width: 100px;
+  height: 100px;
+  z-index: 50;
+
+  @include mobile {
+      top: 10px;
+      left: 20px;
+      right: auto;
+      width: 60px;
+      height: 60px;
+  }
+}
+
+.icon__scroll-down {
+    font-size: 42px !important;
+}
+
+._max-w-1440 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.mobile-img--full {
+    width: 100%;
+}
+
+// floats
+._pl-l {
+ float: left;
+}
+
+._pl-r {
+ float: right;
+}
+
+// position
+._po-r {
+  position: relative;
+}
+
+._po-a {
+  position: absolute;
+}
+
+// display
+._dis-ib {
+  display: inline-block;
+}
+
+._dis-b {
+  display: block;
+}
+
+._dis-n {
+  display: none;
+}
+
+// flex
+._flex {
+  display: flex;
+}
+
+._flex-a-bl {
+  align-items: baseline;
+}
+
+._flex-a-c {
+  align-items: center;
+}
+
+._flex-a-fs {
+    align-items: flex-start;
+}
+
+._flex-a-fe {
+    align-items: flex-end;
+}
+
+._flex-row {
+  flex-direction: row;
+}
+
+._flex-col {
+  flex-direction: column;
+}
+
+._flex-item {
+  flex: 1 auto;
+}
+
+._flex-jc-fs {
+  justify-content: flex-start;
+}
+
+._flex-jc-fe {
+  justify-content: flex-end;
+}
+
+._flex-jc-c {
+  justify-content: center;
+}
+
+// alignment
+._v-a-t {
+  vertical-align: top;
+}
+
+._v-a-m {
+  vertical-align: middle;
+}
+
+._v-a-b {
+  vertical-align: bottom;
+}
+
+// text
+._te-ac {
+  text-align: center;
+}
+
+._te-al {
+  text-align: left;
+}
+
+._te-ar {
+  text-align: right;
+}
+
+._te-aj {
+  text-align: justify;
+}
+
+._color-main {
+  color: $color-main;
+}
+// width
+._w-01 {
+  width: 100%;
+}
+
+._w-01-2 {
+  width: 50%;
+}
+
+._w-01-3 {
+  width: 33.3%;
+}
+
+._w-02-3 {
+  width: 66.6%;
+}
+._w-01-4 {
+  width: 25%;
+}
+
+._w-01-5 {
+  width: 20%;
+}
+._w-03-4 {
+  width: 75%;
+}
+
+._w-80 {
+    width: 80%;
+}
+
+// height
+._h-01 {
+  height: 100%;
+}
+
+// padding
+._p {
+  padding: $padding-base;
+}
+
+._p-l {
+  padding-left: $padding-base;
+}
+
+._p-r {
+  padding-right: $padding-base;
+}
+
+._p-t {
+  padding-top: $padding-base;
+}
+
+._p-b {
+  padding-bottom: $padding-base;
+}
+
+._p-4 {
+  padding: 40px;
+}
+
+._p-5 {
+  padding: 50px;
+}
+
+// margin
+._m-b-10 {
+  margin: 10px;
+}
+
+._m-top {
+    margin-top: 20px;
+}
+
+@include tablet {
+    .tab_w-01 {
+        width: 100%;
+    }
+
+    .tab_p {
+        padding: 20px;
+
+        &-h-40 {
+            padding: 0 40px;
+        }
+    }
+}
+
+@include mobile {
+    .mob_w-01 {
+        width: 100%;
+    }
+
+    .mob_p {
+        padding: $padding-base;
+    }
+
+    .mob_p-b-40 {
+        padding-bottom: 40px;
+    }
+
+    .mob_te-a-c {
+        text-align: center;
+    }
+}
+
+/* The details of your blog. Defined in ghost/settings/ */
+.page-title {
+    margin: 10px 0 10px 0;
+    font-size: 6rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+.page-description {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-family: "Raleway", serif;
+    letter-spacing: 0.01rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.no-cover.main-header {
+    min-height: 160px;
+    max-height: 40vh;
+    background: #f5f8fa;
+}
+
+.no-cover .page-title {
+    color: #FFF;
+}
+
+.no-cover .page-description {
+    color: #FFF;
+}
+
+.no-cover .post-bg-adjust, .no-cover-post .post-bg-adjust {
+    background-color: #3498db;
+}
+
+/* Add subtle load-in animation for content on the home page */
+.home-template .page-title {
+    -webkit-animation: fade-in-down 0.6s;
+    animation: fade-in-down 0.6s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.home-template .page-description {
+    -webkit-animation: fade-in-down 0.9s;
+    animation: fade-in-down 0.9s;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+/* Every post, on every page, gets this style on its <article> tag */
+.post {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    word-wrap: break-word;
+
+    &.post__card {
+        position: relative;
+        display: inline-block;
+        width: 29%;
+        margin: 2%;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+        @include tablet {
+            width: 46%;
+            margin: 1.8%;
+        }
+
+        @include mobile {
+            display: block;
+            width: 100%;
+            margin: 10px;
+        }
+    }
+
+    &__inner-card {
+        position: relative;
+        display: table;
+        max-height: 420px;
+        margin: 0;
+        padding: 20px;
+        margin: 1.5em 2em;
+        background-repeat: no-repeat;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+}
+
+.post-bg {
+    background-color: #3498db;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    overflow: hidden;
+    padding: 4rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.post-bg-adjust {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.1);
+    z-index: 1;
+    transition: all .3s ease;
+}
+.post-bg .post-adjust, .post-head .post-adjust, .author-head .post-adjust {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.post-data h2, .post-data p, .post-data a {
+    color: #FFF!important;
+}
+
+body:not(.post-template) .post-title {
+    font-size: 5.2rem;
+}
+
+.post-title a {
+    text-decoration: none;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.post-excerpt p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+
+.read-more {
+    text-decoration: none;
+}
+
+.post-meta {
+    display: block;
+    margin: 1.75rem 0 0 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #FFF;
+}
+
+.author-thumb {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 9px;
+    border-radius: 100%;
+}
+
+.post-meta a {
+    color: #9EABB3;
+    text-decoration: none;
+}
+.post-meta a:nth-child(n+2), .tags-content a {
+    background-color: #3498db;
+    margin-right: .4rem;
+    padding: .8rem 1.6rem 1rem 1.6rem;
+    border-radius: .4rem;
+    text-decoration: none;
+    color: #FFF;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    position: relative;
+    font-family: "OpenSans", sans-serif;
+}
+.post-meta a:nth-child(n+2):hover,  .post-meta a:nth-child(n+2):active, .tags-content a:hover, .tags-content a:active{
+    text-decoration: none;
+}
+.post-meta a:hover {
+    text-decoration: none;
+}
+
+.user-meta {
+    position: relative;
+    padding: 0.3rem 40px 0 100px;
+    min-height: 77px;
+}
+
+.post-date {
+    display: inline-block;
+    margin-left: 8px;
+    padding-left: 12px;
+    border-left: #d5dbde 1px solid;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    white-space: nowrap;
+}
+
+.user-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.user-name {
+    display: block;
+    font-weight: 700;
+}
+
+.user-bio {
+    display: block;
+    max-width: 440px;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+
+.publish-meta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4.3rem 0 4rem 0;
+    text-align: right;
+}
+
+.publish-heading {
+    display: block;
+    font-weight: 700;
+}
+
+.publish-date {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}

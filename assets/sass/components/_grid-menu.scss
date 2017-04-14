@@ -1,0 +1,92 @@
+@import '../layout/variables';
+@import '../layout/mixins';
+
+.grid-menu {
+    position: relative;
+    display: block;
+
+    &.grid-menu--fullpage {
+        width: 100%;
+        height: 100vh;
+        max-width: 1440px;
+        max-height: 1080px;
+        margin: auto;
+
+        @include handheld {
+            overflow-y: auto;
+        }
+    }
+
+    &__background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 10px;
+    }
+
+    &__option {
+        position: relative;
+        display: inline-block;
+        width: 31%;
+        height: 44%;
+        margin: 1%;
+        padding: 0;
+        cursor: pointer;
+
+        @include tablet-portrait {
+            width: 47.5%;
+            height: 31.8%;
+        }
+
+        @include tablet-landscape {
+            width: 30.8%;
+            height: 47%;
+        }
+
+        @include mobile {
+            width: 97%;
+            height: 97%;
+        }
+
+        &:hover {
+            .grid-menu__overlay {
+                background: rgba(0,0,0,0.3);
+            }
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.5);
+    }
+
+    &__title {
+        position: relative;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        color: $color-white;
+    }
+}
+
+.toggle-service-3 {
+    .grid-menu__background {
+        @include mobile {
+            background-position: left;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{{!< default}}
+
+{{> "headers/header-vat"}}
+
+<main id="vat" class="vat" role="main">
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+            <div class="card" style="padding: 20px;">
+                <h2 class="_te-ac">VAT Info Request</h2>
+                <h6 class="_te-ac font__subtitle">Need a price quote?</h6>
+                <p style="padding-top: 20px;">
+                We know that handling VAT for yacht charters can be time consuming, difficult and costly.  That's why we're here to help make it a smooth and efficient process.  If you would like us to send you a price quote and brief outline of how we can handle your VAT needs, please fill out this request form.
+                </p>
+                <p>
+                    The size of your vessel does NOT matter. Our knowledgeable staff will handle all of your VAT matters in Croatia.
+                </p>
+                <div style="text-align: center; width: 100%;">
+                <a class="waves-effect waves-light btn modal__button modal__button--dark" href="#modal--tax-form">VAT Request</a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 20px;">
+        <div class="col s12 m6">
+            <div class="card card--full" href="#">
+                <div class="card-image">
+                    <img src="{{asset "images/menu/vat-2.jpg"}}" />
+                    <div class="card-overlay"></div>
+                    <span class="card-title">VAT Services</span>
+                </div>
+                <div class="card-reveal">
+                    <div>
+                        <div class="card-line"></div>
+                        <p>
+                            Fact 1:
+                        </p>
+                        <div class="card-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6">
+            <div class="card card--full" href="#">
+                <div class="card-image">
+                    <img src="{{asset "images/menu/easytax.jpg"}}">
+                    {{!--<div class="card-overlay"></div>--}}
+                    {{!--<span class="card-title">Easytax Partnership</span>--}}
+                </div>
+                    <div class="card-reveal">
+                        <div>
+                        <div class="card-line"></div>
+                        <p>
+                            We've partnered with Easytax of France to assist yachts throughout the Med
+                        </p>
+                        <div class="card-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</main>
+
+<!-- Modal Structure -->
+<div id="modal--tax-form" class="modal bottom-sheet">
+    <div class="modal-content">
+        {{> "social/yacht-tax-form"}}
+    </div>
+</div>
+
+{{> "footer"}}

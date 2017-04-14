@@ -1,0 +1,102 @@
+@import '../layout/variables';
+@import '../layout/mixins';
+
+/* ==========================================================================
+   9. Pagination - Tools to let you flick between pages
+   ========================================================================== */
+
+/* The main wrapper for our pagination links */
+.pagination-bg {
+    position: relative;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    padding: 0;
+    padding-top: 40px;
+    clear: both;
+    // padding: 4rem 0;
+}
+nav.pagination {
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    background: transparent;
+    color: $color-dark-main;
+    text-align: center;
+    border: 1px solid $color-dark-2;
+}
+
+.pagination a {
+    color: #555;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* Push the previous/next links out to the left/right */
+.older-posts,
+.newer-posts {
+    position: absolute;
+    display: inline-block;
+    height: inherit;
+    width: auto;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: border 0.3s ease;
+    color: #555;
+
+    @include mobile {
+        position: relative;
+    }
+}
+
+.older-posts {
+    right: 0;
+    border-left: 1px solid #555;
+}
+
+.page-number {
+    display: inline-block;
+    height: inherit;
+    width: auto;
+    padding: 0 10px;
+    min-width: 100px;
+}
+
+.newer-posts {
+    left: 0;
+    border-right: 1px solid #555;
+}
+
+.older-posts:hover,
+.newer-posts:hover {
+    color: #889093;
+    border-color: #98a0a4;
+}
+
+.extra-pagination {
+    display: none;
+    // background-color: #2c3e50;
+    width: 100%!important;
+    max-width: inherit!important;
+    padding: 1.4rem;
+    box-sizing: border-box;
+}
+.extra-pagination .pagination {
+    width: auto;
+}
+
+/* On page2+ make all the headers smaller */
+.archive-template .main-header {
+    max-height: 50vh;
+}
+
+/* On page2+ show extra pagination controls at the top of post list */
+.archive-template .extra-pagination {
+    display: block;
+}

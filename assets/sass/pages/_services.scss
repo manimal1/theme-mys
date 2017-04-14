@@ -1,0 +1,33 @@
+@import '../layout/variables';
+@import '../layout/mixins';
+
+.services {
+
+    .container {
+        @include desktop {
+            width: 100%;
+        }
+    }
+
+    .row {
+        @include tablet {
+            display: flex;
+            align-items: stretch;
+        }
+
+        @include desktop {
+            display: flex;
+            align-items: stretch;
+        }
+    }
+
+    .card {
+        @include tablet {
+            height: 100%;
+        }
+
+        @include desktop {
+            height: 100%;
+        }
+    }
+}

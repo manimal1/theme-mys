@@ -1,0 +1,63 @@
+@import '../layout/variables';
+@import '../layout/mixins';
+
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+
+  @include mobile {
+    display: none;
+  }
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 10px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+.header-carousel {
+  img {
+    width: 100%;
+  }
+}
+
+.mobile-carousel {
+  margin: 0 10px;
+}

@@ -1,0 +1,119 @@
+@import '../layout/variables';
+@import '../layout/mixins';
+
+.post {
+    .card {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.post__card {
+    &:hover {
+        .post-bg-adjust {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.post__link--fullpage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.post-template {
+
+    .main-nav {
+        position: fixed;
+        // position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: auto;
+        height: 50px;
+        border: 0;
+        padding: 0;
+        // background: rgba(0,0,0,0.3);
+        background-color: $color-grey-3;
+        z-index: 100;
+    }
+
+    .logo--mobile-centered {
+        display: none;
+
+        @include mobile {
+            display: inline-block;
+            text-align: center;
+            width: 50px;
+        }
+    }
+
+    .home-button,
+    .nav__menu-toggle--post {
+        display: block;
+        width: 100px;
+        height: inherit;
+        background: transparent;
+        color: $color-dark-main;
+
+        &:hover {
+            border-color: $color-main;
+
+            .icon,
+            .nav__menu-button {
+                color: $color-main;
+            }
+        }
+    }
+     
+    .home-button {
+        float: left;
+
+        .icon {
+            width: 100%;
+            margin: 0;
+            font-size: 40px;
+
+            @include mobile {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .nav__menu-toggle--post {
+        float: right;
+
+        .icon {
+            float: none;
+            margin: 0;
+            font-size: 30px;
+            display: block;
+
+            @include mobile {
+                font-size: 26px;
+            }
+        }
+    }
+
+    .icon {
+        display: initial;
+        vertical-align: middle;
+        height: inherit;
+        float: left;
+        line-height: 50px;
+        margin-left: 13px;
+    }
+
+    .nav__menu-button {
+        float: left;
+        line-height: 50px;
+    }
+}

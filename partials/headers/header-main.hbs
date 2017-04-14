@@ -1,0 +1,21 @@
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="post-bg-adjust"></div>
+    {{#if @blog.navigation}}
+        <a href="#" data-activates="slide-out" class="nav__menu-toggle"><i class="material-icons icon">menu</i><span class="nav__menu-button">Menu</span></a>
+    {{/if}}
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{@blog.title}}</h1>
+            {{!--<h2 class="page-description">{{@blog.description}}</h2>--}}
+            <h2 class="page-description">Services<i class="fa fa-circle" aria-hidden="true" style="font-size: 6px; vertical-align: middle; padding: 0 10px; color: #b5a26d;"></i>Charter<i class="fa fa-circle" aria-hidden="true" style="font-size: 6px; vertical-align: middle; padding: 0 10px; color: #b5a26d;"></i>VAT<i class="fa fa-circle" aria-hidden="true" style="font-size: 6px; vertical-align: middle; padding: 0 10px; color: #b5a26d;"></i>Management</h2>
+            <h2 class="page-description">Croatia<span style="padding: 0 10px; color: #b5a26d; font-size: 24px; vertical-align: middle;">|</span>Montenegro</h2>
+        </div>
+    </div>
+    <img class="logo" src="{{asset "images/logo.png"}}" alt="logo" />
+    <a class="scroll-down scroll-down__footer" href="#content" data-offset="0">
+      <span><i class="material-icons icon__scroll-down">chevron_left</i></span>
+      <span class="hidden">Scroll Down</span>
+    </a>
+    
+    {{> "social/social-links"}}
+</header>
