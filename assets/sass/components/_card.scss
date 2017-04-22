@@ -34,6 +34,14 @@
   &.card_p {
     padding: $padding-base;
   }
+
+  &._flex {
+    display: flex;
+  }
+
+  .card-title {
+    letter-spacing: 1px;
+  }
 }
 
 .card--full {
@@ -60,6 +68,12 @@
       opacity: 1;
       top: 0;
       background: rgba(0,0,0,0.8);
+
+      span.list-highlight {
+        color: $color-main;
+        padding-right: 10px;
+        font-size: 2rem;
+      }
     }
   }
   
@@ -83,6 +97,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline $color-main;
   }
 
   .panel__title {
@@ -137,6 +153,17 @@
       margin: 0 auto;
       border-top: 1px solid $color-main;
     }
+
+    .card-reveal-inner {
+      position: absolute;
+      top: 15px;
+      padding: 20px;
+
+      @include mobile {
+        top: 5px;
+        padding: 10px;
+      }
+    }
   }
 }
 
@@ -157,6 +184,47 @@
 
   @include mobile {
     display: none !important;
+  }
+}
+
+.card {
+  &.horizontal.small {
+    .card-image {
+        @include tablet {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 100%;
+        }
+
+      img {
+        @include tablet {
+          display: none;
+        }
+      }
+
+      &.card--brazil {
+        @include tablet {
+          background-image: url("../images/charter/brazil/main-3.jpg");
+        }
+      }
+      &.card--pida {
+        @include tablet{
+          background-image: url("../images/charter/pida/main-3.jpg");
+        }
+      }
+      &.card--tuscan-sun {
+        @include tablet {
+          background-image: url("../images/charter/tuscan_sun/main-1.jpg");
+        }
+      }
+      &.card--lady-sunshine {
+        @include tablet {
+          background-image: url("../images/charter/lady_sunshine/main-1.jpg");
+        }
+      }
+    }
   }
 }
 

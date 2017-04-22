@@ -20,7 +20,7 @@ $desktop-width: 992px;
 }
 
 @mixin tablet-landscape {
-    @media (min-width: #{921px}) and (max-width: #{$desktop-width - 1px}) {
+    @media (min-width: #{921px}) and (max-width: #{1024px}) {
       @content;
     }
 }

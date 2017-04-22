@@ -7,15 +7,37 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-}
 
-.post__card {
-    &:hover {
-        .post-bg-adjust {
-            background-color: rgba(0, 0, 0, 0.3);
+    &__card {
+        &:hover {
+            .post-bg-adjust {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
         }
     }
+
+    &-excerpt {
+        display: none;
+    }
+
+    .post-adjust {
+        .post-data {
+            text-align: center;
+        }
+    }
+
+    &-date {
+        border: 0;
+    }
 }
+
+// .post__card {
+//     &:hover {
+//         .post-bg-adjust {
+//             background-color: rgba(0, 0, 0, 0.3);
+//         }
+//     }
+// }
 
 .post__link--fullpage {
     position: absolute;

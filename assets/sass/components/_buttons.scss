@@ -89,3 +89,9 @@
     color: $color-dark-main;
   }
 }
+
+.btn {
+  &.btn--dark {
+    background-color: $color-dark-main;
+  }
+}

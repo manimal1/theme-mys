@@ -1,0 +1,21 @@
+<header class="main-header" style="background-image: url({{asset "images/headers/about-us.jpg"}})">
+    <div class="post-bg-adjust"></div>
+    {{#if @blog.navigation}}
+        <a href="#" data-activates="slide-out" class="nav__menu-toggle"><i class="material-icons icon">menu</i><span class="nav__menu-button">Menu</span></a>
+    {{/if}}
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">About Us</h1>
+            {{!--<h2 class="page-description">Yachts</h2>--}}
+        </div>
+    </div>
+    <a class="scroll-down icon__scroll-down scroll-down__footer" href="#about" data-offset="0">
+        <span><i class="material-icons icon__scroll-down">chevron_left</i></span>
+        <span class="hidden">Scroll Down</span>
+    </a>
+    <a href="/">
+        <img class="logo" src="{{asset "images/logo.png"}}" alt="logo" />
+    </a>
+
+    {{> "social/social-links"}}
+</header>

@@ -1,0 +1,20 @@
+{{!< default}}
+
+<header class="events-header">
+    {{#if @blog.navigation}}
+        <a href="#" data-activates="slide-out" class="nav__menu-toggle"><i class="material-icons icon">menu</i><span class="nav__menu-button">Menu</span></a>
+    {{/if}}
+    <h1 class="events-title">Events in Croatia</h1>
+    <a href="/">
+        <img class="logo" src="{{asset "images/logo.png"}}" alt="logo" />
+    </a>
+</header>
+
+<main id="events" class="events-body" role="main">
+
+    <div data-tockify-component="calendar" data-tockify-calendar="croatiaevents"></div>
+    <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+
+</main>
+
+{{> "footer"}}

@@ -21,7 +21,9 @@
                             <p>{{excerpt words="26"}}<a class="read-more" href="{{url}}">...</a></p>
                         </section>
                         <footer class="post-meta">
-                            {{author}}
+                            <div style="display: none;">
+                                {{author}}
+                            </div>
                             <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
                             <br><br>
                             {{tags prefix="" separator=""}}

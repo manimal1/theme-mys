@@ -45,6 +45,7 @@
     z-index: 20;
     border: 1px solid $color-white;
     border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px #555;
 
     &:hover {
         background-color: $color-main;
@@ -104,6 +105,10 @@
     .tabs {
         &.tabs-transparent {
             margin: 0 auto;
+
+            @include desktop {
+                width: 460px;
+            }
 
             .tab {
 

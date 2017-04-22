@@ -64,6 +64,19 @@ main {
     width: 100%;
 }
 
+.list-highlight {
+    color: $color-main;
+    padding-right: 10px;
+    font-size: 2rem;
+}
+
+.row-0,
+.row-1 {
+    @include mobile {
+        margin-bottom: 0;
+    }
+}
+
 // floats
 ._pl-l {
  float: left;
@@ -247,6 +260,15 @@ main {
     margin-top: 20px;
 }
 
+.tab_dis-n {
+    @include tablet {
+        display: none;
+    }
+    @include tablet-landscape {
+        display: none;
+    }
+}
+
 @include tablet {
     .tab_w-01 {
         width: 100%;
@@ -287,6 +309,7 @@ main {
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: #fff;
+    text-shadow: 1px 1px 1px #333;
 }
 
 .page-description {
@@ -296,7 +319,12 @@ main {
     font-weight: 400;
     font-family: "Raleway", serif;
     letter-spacing: 0.01rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.9);
+    text-shadow: 1px 1px 1px #333;
+
+    @include mobile {
+        font-size: 2.3rem;
+    }
 }
 
 .no-cover.main-header {
@@ -419,7 +447,7 @@ body:not(.post-template) .post-title {
 
 .post-title a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -455,7 +483,8 @@ body:not(.post-template) .post-title {
     text-decoration: none;
 }
 .post-meta a:nth-child(n+2), .tags-content a {
-    background-color: #3498db;
+    // background-color: #3498db;
+    background-color: $color-main;
     margin-right: .4rem;
     padding: .8rem 1.6rem 1rem 1.6rem;
     border-radius: .4rem;

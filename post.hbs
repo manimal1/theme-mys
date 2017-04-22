@@ -21,7 +21,9 @@
                     <h2 class="post-title">{{title}}</h2>
                 </header>
                 <footer class="post-meta">
-                    {{author}} | 
+                    <div style="display: none;">
+                        {{author}} | 
+                    </div>
                     <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
                     <div class="tags-content">
                         {{tags separator=" "}}
