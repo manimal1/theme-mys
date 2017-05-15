@@ -20,21 +20,6 @@
             }
         });
 
-        // $('#modal-contact').modal({
-        //     dismissible: true,
-        //     ready: function(modal, trigger) {
-        //         var modalHeight = $('.modal--base').css('height');
-                
-        //         $('.modal').css("max-height: 75%");
-
-        //         $('.modal-overlay').css({
-        //             top: "0px",
-        //             bottom: modalHeight,
-        //             height: "auto"
-        //         });
-        //     }
-        // });
-
         $('#modal--newsletter').modal({
             ready: function(modal, trigger) {
                 var modalHeight = $('#modal--newsletter').css('height');
@@ -72,7 +57,6 @@
         $('#exterior').modal({
             startingTop: '5%',
             endingTop: '5%',
-            wrapAround: true,
             ready: function(modal, trigger) {
                 $('.main-carousel').flickity('resize');
             }

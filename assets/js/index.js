@@ -8,13 +8,6 @@
     var mobileWidth = 600;
     var tabletWidth = 992;
     var desktopWidth = 1025;
-    var edge;
-
-    if ( $(window).width() <= mobileWidth ) {
-        edge = 'right';
-    } else {
-        edge = 'left';
-    }
 
     var $document = $(document);
 
@@ -24,11 +17,6 @@
         $postContent.fitVids();
 
         $(".scroll-down").arctic_scroll();
-
-        // $(".menu-button, .nav-cover, .nav-close").on("click", function(e){
-        //     e.preventDefault();
-        //     $("body").toggleClass("nav-opened nav-closed");
-        // });
 
     });
 
@@ -65,22 +53,21 @@
     };
 
     $('.nav__menu-toggle').sideNav({
-        menuWidth: 300, // Default is 300
-        edge: edge, // Choose the horizontal origin
+        menuWidth: 300,
+        edge: 'right',
         closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
         draggable: true // Choose whether you can drag to open on touch screens
     });
 
     $('.nav__menu-toggle--post').sideNav({
             menuWidth: 300, 
-            edge: edge,
+            edge: 'right',
             closeOnClick: true,
             draggable: true
         }
     );
 
     $('.header-carousel').flickity({
-        // options
         cellAlign: 'center',
         contain: true,
         imagesLoaded: true,
@@ -88,13 +75,21 @@
     });
 
     $('.mobile-carousel').flickity({
-        // options
         cellAlign: 'center',
         contain: true,
         imagesLoaded: true,
-        wrapAround: true
+        wrapAround: true,
+        pageDots: false,
+        prevNextButtons: true
     });
 
-    $('.main-carousel').flickity();
+    $('.main-carousel').flickity({
+        cellAlign: 'center',
+        contain: true,
+        imagesLoaded: true,
+        resize: true
+    });
+
+    $('.collapsible').collapsible();
   
 })(jQuery);

@@ -21,6 +21,64 @@
         font-size: 3.5rem;
       }
     }
+
+    &__center-title {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      bottom: auto;
+      left: 0;
+      color: #fff;
+      font-size: 42px;
+    }
+
+    &--home {
+      background-image: url("../images/headers/home.jpg");
+
+      @include mobile {
+        background-image: url("../images/headers/mobile/home.jpg");
+      }
+    }
+
+    &--about {
+      background-image: url("../images/headers/about-us.jpg");
+
+      @include mobile {
+        background-image: url("../images/headers/mobile/about-us.jpg");
+      }
+    }
+
+    &--services {
+      background-image: url("../images/headers/agent-services.jpg");
+
+      @include mobile {
+        background-image: url("../images/headers/mobile/agent-services.jpg");
+      }
+    }
+
+    &--vat {
+      background-image: url("../images/headers/vat.jpg");
+
+      @include mobile {
+        background-image: url("../images/headers/mobile/vat.jpg");
+      }
+    }
+
+    &--management {
+      background-image: url("../images/headers/management.jpg");
+
+      @include mobile {
+        background-image: url("../images/headers/mobile/management.jpg");
+      }
+    }
+
+    &--charter {
+      background-image: url("../images/headers/charter.jpg");
+
+      @include mobile {
+        background-image: url("../images/headers/mobile/charter.jpg");
+      }
+    }
 }
 
 .main-header .inner {
@@ -168,5 +226,19 @@ header.carousel-header {
 
   &--right {
     text-align: right;
+  }
+}
+
+.video-header {
+  .main-header__center-title {
+
+    @include tablet {
+      font-size: 2em;
+      top: 10px;
+    }
+    @include mobile {
+      font-size: 1.3em;
+      top: 0;
+    }
   }
 }

@@ -31,3 +31,19 @@
         }
     }
 }
+
+.about {
+    .card {
+
+        &-content {
+            .card-title {
+                margin-bottom: 0;
+            }
+
+            .card-subtitle {
+                font-size: 0.8em;
+                text-align: center;
+            }
+        }
+    }
+}

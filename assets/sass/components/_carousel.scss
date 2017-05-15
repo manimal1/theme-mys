@@ -15,6 +15,19 @@
   width: 60px;
   height: 60px;
   background: transparent;
+
+  @include mobile {
+    & svg {
+      width: 40%;
+    }
+
+    &.previous {
+      left: 0px;
+    }
+    &.next {
+      right: -10px;
+    }
+  }
 }
 .flickity-prev-next-button:hover {
   background: transparent;
@@ -22,14 +35,12 @@
 /* arrow color */
 .flickity-prev-next-button .arrow {
   fill: white;
-
-  @include mobile {
-    display: none;
-  }
 }
+
 .flickity-prev-next-button.no-svg {
   color: white;
 }
+
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
@@ -39,6 +50,7 @@
 .flickity-page-dots {
   bottom: 10px;
 }
+
 /* white circles */
 .flickity-page-dots .dot {
   width: 12px;
@@ -47,6 +59,7 @@
   background: transparent;
   border: 2px solid white;
 }
+
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
   background: white;

@@ -9,6 +9,14 @@ footer {
         height: $footer-height + 20px;
         padding: 20px 0 0 0;
 
+        @include tablet {
+            height: 140px
+        }
+
+        @include mobile {
+            height: 140px
+        }
+
         &__top-link {
             color: $color-dark-main;
             
@@ -21,6 +29,14 @@ footer {
         .row,
         .col--flex {
             height: 50px;
+
+            @include tablet {
+                height: 35px;
+            }
+
+            @include mobile {
+                height: 35px;
+            }
         }
 
         .col--flex {
@@ -46,12 +62,21 @@ footer {
                 background-color: $color-main;
                 color: $color-grey-3;
             }
+
+            @include tablet {
+                font-size: 0.7em;
+                padding: 0 10px;
+            }
+
+            @include mobile {
+                font-size: 0.7em;
+                padding: 0 10px;
+            }
         }
     }
 
     .page-footer__row {
         margin: 0;
-        height: 50px;
     }
 
     .page-footer__column--centered {
@@ -65,6 +90,28 @@ footer {
 
         &:hover {
             color: $color-main;
+        }
+    }
+
+    .page-footer__handheld-margin {
+        @include tablet {
+            margin-top: 10px;
+        }
+
+        @include mobile {
+            margin-top: 10px;
+        }
+    }
+
+    .page-footer__handheld-row {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
+
+        @include mobile {
+            display: block;
         }
     }
 }

@@ -3,19 +3,20 @@
 {{> "headers/header-management"}}
 
 <main id="services" class="services" role="main">
-
     <div class="container">
         <div class="row row-0">
             <div class="col s12 m6">
                 <div class="card card--full" href="#">
-                    <div class="card-image" style="background-image: url({{asset "images/pages/management/management-1.jpg"}}); min-height: 230px;">
-                        <span class="card-title" style="text-shadow: 1px 1px 2px black;">Technical Operations</span>
+                    <div class="card-image">
+                        <img src="{{asset "images/pages/management/management-2.jpg"}}">
+                        <div style="background: rgba(0,0,0,0.1); position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
+                        <span class="card-title" style="text-shadow: 1px 1px 2px black;">Accounting &amp; Budget Management</span>
                     </div>
                     <div class="card-reveal">
-                        <div>
+                        <div class="card-reveal__inner">
                             <div class="card-line"></div>
                             <p>
-                                General maintenance. Major refits. Dockyard assistance.
+                                Preparation of budgets, record keeping, account overviews, payments and cost control
                             </p>
                             <div class="card-line"></div>
                         </div>
@@ -25,15 +26,15 @@
 
             <div class="col s12 m6">
                 <div class="card card--full" href="#">
-                    <div class="card-image">
-                        <img src="{{asset "images/pages/management/management-2.jpg"}}">
-                        <span class="card-title" style="text-shadow: 1px 1px 2px black;">Accounting &amp; Budget Management</span>
+                    <div class="card-image" style="background-image: url({{asset "images/pages/management/management-1.jpg"}}); min-height: 230px;">
+                        <div style="background: rgba(0,0,0,0.1); position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
+                        <span class="card-title" style="text-shadow: 1px 1px 2px black;">Marine and Technical Operations, Safety and Security</span>
                     </div>
                     <div class="card-reveal">
-                        <div>
+                        <div class="card-reveal__inner">
                             <div class="card-line"></div>
                             <p>
-                                Record keeping, account overviews and cost control
+                                Looking after daily activities of a yacht, 24/ 7 technical support, general maintenance, refits, ISM and ISPS codes
                             </p>
                             <div class="card-line"></div>
                         </div>
@@ -45,13 +46,14 @@
             <div class="col s12 m6">
                 <div class="card card--full" href="#">
                     <div class="card-image" style="background-image: url({{asset "images/pages/management/management-3.png"}}); min-height: 230px;">
+                        <div style="background: rgba(0,0,0,0.1); position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
                         <span class="card-title" style="text-shadow: 1px 1px 2px black;">Crew Managment</span>
                     </div>
                     <div class="card-reveal">
-                        <div>
+                        <div class="card-reveal__inner" style="text-align: center;">
                             <div class="card-line"></div>
                             <p>
-                                Recruitment, contracts, payments, training, and overall support
+                                Contracts, payroll, training, and overall support
                             </p>
                             <div class="card-line"></div>
                         </div>
@@ -66,7 +68,7 @@
                         <span class="card-title">Yacht Registration</span>
                     </div>
                     <div class="card-reveal">
-                        <div>
+                        <div class="card-reveal__inner">
                             <div class="card-line"></div>
                             <p>
                                 Yacht registry is a necessity. Knowing the advantages of where and how is what we do.
@@ -78,7 +80,4 @@
             </div>
         </div>  
     </div>
-
 </main>
-
-{{> footer}}

@@ -1,17 +1,11 @@
-<header class="carousel-header">
+<header class="video-header">
     {{#if @blog.navigation}}
         <a href="#" data-activates="slide-out" class="nav__menu-toggle"><i class="material-icons icon">menu</i><span class="nav__menu-button">Menu</span></a>
     {{/if}}
-    <h1 class="">M/Y Brazil</h1>
+    <h1 class="main-header__center-title" style="text-align: center;">M/Y Brazil</h1>
     <a href="/">
         <img class="logo" src="{{asset "images/logo.png"}}" alt="logo" />
     </a>
 
-    <div class="header-carousel">
-        <div class="carousel-cell"><img src="{{asset "images/charter/brazil/main-1.jpg"}}"></div>
-        <div class="carousel-cell"><img src="{{asset "images/charter/brazil/main-2.jpg"}}"></div>
-        <div class="carousel-cell"><img src="{{asset "images/charter/brazil/main-3.jpg"}}"></div>
-    </div>
-
-    <img class="header-img--mobile" src="{{asset "images/charter/brazil/mobile/mob-main-1.jpg"}}" />
+    <iframe id="brazil-video" class="video-frame" width="100%" height="auto" src="https://www.youtube.com/embed/tg7CyHClmt0?rel=0&autoplay=0&controls=1&showinfo=0&loop=0" frameborder="0" allowfullscreen style="margin: 0;"></iframe>
 </header>

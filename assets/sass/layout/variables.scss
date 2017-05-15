@@ -1,9 +1,19 @@
-$color-main: #b5a26d;
+// $color-main: #b5a26d; // *alternate
+$color-main: #98844E;
 $color-secondary: #B3B66E;
-$color-dark-main: #5A574B;
-// $color-dark-main: #140D2E;
+$color-ternary: #5A574B;
+
+// $color-dark-main: #5A574B; // *alternate
 // $color-dark-main: #151733;
+// $color-dark-main: #140D2E;
+// $color-dark-main: #1C1C1F;
+// $color-dark-main: #090C2B;
+// $color-dark-main: #161A42;
+$color-dark-main: #030517;
 $color-dark-2: #555;
+
+$color-highlight: rgb(214, 204, 197);
+
 $color-grey-1: #F7F7F7;
 $color-grey-2: #999;
 $color-grey-3: #e7e7e7;
@@ -18,3 +28,5 @@ $padding-medium: 30px;
 $padding-large: 40px;
 
 $footer-height: 100px;
+
+$main-bg-color: #F0ECEB;

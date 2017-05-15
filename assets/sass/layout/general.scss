@@ -35,8 +35,8 @@ main {
 .logo {
   position: absolute;
   top: 20px;
-  right: 20px;
-  left: auto;
+  left: 20px;
+  right: auto;
   bottom: auto;
   width: 100px;
   height: 100px;
@@ -68,6 +68,10 @@ main {
     color: $color-main;
     padding-right: 10px;
     font-size: 2rem;
+}
+
+.bg-color-highlight {
+    background-color: $color-highlight;
 }
 
 .row-0,
@@ -249,6 +253,10 @@ main {
 
 ._p-5 {
   padding: 50px;
+}
+
+.no-padding {
+    padding: 0;
 }
 
 // margin

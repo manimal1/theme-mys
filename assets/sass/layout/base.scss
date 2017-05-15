@@ -20,11 +20,12 @@ body {
     line-height: 1.75em;
     // color: #3A4145;
     background: $color-grey-1;
-    color: $color-dark-main;
+    color: $color-dark-2;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
     text-rendering: geometricPrecision;
+    overflow-x: hidden;
 }
 
 main {
@@ -86,7 +87,7 @@ h6 {
 }
 
 a {
-    color: #3498db;
+    color: $color-main;
     transition: color 0.3s ease;
 }
 
@@ -123,7 +124,7 @@ p, span, strong, b, i, em, a {
 }
 
 p {
-  color: #999;
+  color: #555;
 }
 /* end alternate heading and paragraph styles */
 

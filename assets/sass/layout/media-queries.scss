@@ -6,3 +6,11 @@
         display: none;
     }
 }
+
+.mobile-only {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}

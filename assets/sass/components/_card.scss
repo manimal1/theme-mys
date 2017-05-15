@@ -67,7 +67,7 @@
       display: flex;
       opacity: 1;
       top: 0;
-      background: rgba(0,0,0,0.8);
+      background: rgba(3,5,23,0.9);
 
       span.list-highlight {
         color: $color-main;
@@ -110,12 +110,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     opacity: 0;
     transition-duration: 250ms;
     transition-property: opacity, background;
     transition-timing-function: ease-out;
     transition-delay: 250ms;
+
+    &__inner {
+      width: 80%;
+      margin: 0 auto;
+
+      @include tablet {
+        width: 90%;
+      }
+
+      @include mobile {
+        width: 95%;
+        text-align: left;
+      }
+    }
 
     i {
       cursor: pointer;
@@ -148,7 +161,6 @@
     }
 
     .card-line {
-      width: 80%;
       height: 1px;
       margin: 0 auto;
       border-top: 1px solid $color-main;
@@ -206,7 +218,7 @@
 
       &.card--brazil {
         @include tablet {
-          background-image: url("../images/charter/brazil/main-3.jpg");
+          background-image: url("../images/charter/brazil/exterior-0b.jpg");
         }
       }
       &.card--pida {
@@ -370,14 +382,6 @@
       align-items: flex-start;
       justify-content: flex-start;
     }
-
-    // @include tablet {
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   left: 0;
-    //   height: 100%;
-    // }
   }
 
   &__box-row {
@@ -520,5 +524,38 @@
         color: $color-main;
       }
     }
+  }
+
+  &--grey {
+    background-color: $color-grey-3;
+  }
+
+  &-list-text {
+    font-size: 0.9em;
+  }
+}
+
+.info-card {
+
+  &__inner-row {
+    margin-bottom: 0 !important;
+    // padding: 20px;
+    // background-color: $color-highlight;
+  }
+  
+  &__inner-column {
+    padding: 0 !important;
+  }
+
+  &__column-title {
+    color: black;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 1px solid $color-dark-2;
+  }
+
+  &__column-text {
+    text-align: left;
+    border-bottom: 1px solid $color-dark-2;
   }
 }

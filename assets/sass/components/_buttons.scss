@@ -93,5 +93,23 @@
 .btn {
   &.btn--dark {
     background-color: $color-dark-main;
+
+    &:hover {
+      background: $color-main;
+    }
+  }
+}
+
+.fixed-action-btn {
+  .btn-floating {
+    background-color: $color-main;
+
+    &.highlight-1 {
+      background-color: $color-secondary;
+    }
+
+    &.highlight-2 {
+      background-color: $color-ternary;
+    }
   }
 }

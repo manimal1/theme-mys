@@ -3,8 +3,11 @@
 {{> "headers/header-charter"}}
 
 <main id="charter" class="charter" role="main">
+
+  {{> "charter/cards/brazil"}}
+  {{> "charter/cards/mobile/brazil"}}
   
-  <nav class="nav-extended">
+  {{!--<nav class="nav-extended">
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
         <li class="tab"><a class="active" href="#tab1">All</a></li>
@@ -38,23 +41,13 @@
   <div id="tab3" class="col s12">
     {{> "charter/cards/lady-sunshine"}}
     {{> "charter/cards/mobile/lady-sunshine"}}
-  </div>
+  </div>--}}
 
 </main>
 
-<!-- Modal Structure -->
-<div id="modal-contact" class="modal modal--base bottom-sheet">
-    <div class="modal-content">
-      {{> "social/contact-form"}}
-    </div>
-</div>
-</div>
-
-<!-- Modal Structure -->
+<!-- Modal - Brazil availability calendar -->
 <div id="modal--brazil" class="modal bottom-sheet">
     <div class="modal-content">
         <iframe src="https://calendar.google.com/calendar/embed?src=myscroatia.com_quoq44p05nl8at5mh56d1oro4g%40group.calendar.google.com&ctz=Europe/Belgrade" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 </div>
-
-{{> "footer"}}

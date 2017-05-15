@@ -1,6 +1,14 @@
 @import '../layout/variables';
 @import '../layout/mixins';
 
+nav.main-nav--standard {
+    height: auto;
+    width: auto;
+    line-height: inherit;
+    background-color: transparent !important;
+    color: inherit;
+}
+
 .side-nav {
     li.card--custom {
         padding: 0;
@@ -36,8 +44,8 @@
 .nav__menu-toggle {
     position: absolute;
     top: 40px;
-    left: 40px;
-    right: auto;
+    right: 20px;
+    left: auto;
     bottom: auto;
     padding: 3px 8px;
     vertical-align: middle;

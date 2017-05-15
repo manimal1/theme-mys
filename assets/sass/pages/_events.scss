@@ -9,7 +9,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #5A574B;
+        background-color: $color-dark-main;
 
         @include mobile {
             height: 90px;
@@ -19,5 +19,13 @@
     &-title {
         color: #fff;
         letter-spacing: 0.1rem;
+
+        @include mobile {
+            font-size: 1em;
+        }
+    }
+
+    &-body {
+        min-height: calc(100vh - 250px);
     }
 }
