@@ -4,19 +4,21 @@
 
 <main id="charter" class="charter" role="main">
 
-  {{> "charter/cards/brazil"}}
-  {{> "charter/cards/mobile/brazil"}}
+  {{!--{{> "charter/cards/brazil"}}
+  {{> "charter/cards/mobile/brazil"}}--}}
   
-  {{!--<nav class="nav-extended">
+  <nav class="nav-extended">
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
         <li class="tab"><a class="active" href="#tab1">All</a></li>
         <li class="tab"><a href="#tab2">Motor Yachts</a></li>
         <li class="tab"><a href="#tab3">Sail Yachts</a></li>
-        <li class="tab"><a href="#tab4">Luxury Gullets</a></li>
+        {{!--<li class="tab"><a href="#tab4">Luxury Gullets</a></li>--}}
       </ul>
     </div>
   </nav>
+
+  {{> "charter/cards/charter-info"}}
 
   <div id="tab1" class="col s12">
     {{> "charter/cards/brazil"}}
@@ -41,7 +43,7 @@
   <div id="tab3" class="col s12">
     {{> "charter/cards/lady-sunshine"}}
     {{> "charter/cards/mobile/lady-sunshine"}}
-  </div>--}}
+  </div>
 
 </main>
 

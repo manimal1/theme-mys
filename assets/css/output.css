@@ -1439,6 +1439,10 @@ nav.main-nav--standard {
     background-color: #98844E; }
     .side-nav li.card--custom.active a {
       color: #FFFFFF; }
+      .side-nav li.card--custom.active a:hover {
+        background-color: #98844E; }
+.side-nav a:hover {
+  background-color: #d6ccc5; }
 .side-nav .userView {
   height: 200px; }
   .side-nav .userView .background {
@@ -1500,7 +1504,7 @@ nav.main-nav--standard {
     margin: 0 auto; }
     @media (min-width: 992px) {
       .nav-extended .tabs.tabs-transparent {
-        width: 460px; } }
+        width: 317px; } }
     .nav-extended .tabs.tabs-transparent .tab .active {
       color: #98844E; }
     .nav-extended .tabs.tabs-transparent .tab a {
@@ -1847,6 +1851,9 @@ header.carousel-header {
     .card--mobile-hide {
       display: none !important; } }
 
+@media (max-width: 599px) {
+  .card {
+    padding: 20px; } }
 @media (min-width: 600px) and (max-width: 991px) {
   .card.horizontal.small .card-image {
     background-size: cover;
@@ -2083,6 +2090,9 @@ header.carousel-header {
 .info-card__column-text {
   text-align: left;
   border-bottom: 1px solid #555; }
+  @media (max-width: 599px) {
+    .info-card__column-text {
+      text-align: center; } }
 
 #mc_embed_signup form {
   padding: 0; }
@@ -2578,8 +2588,6 @@ footer .page-footer__handheld-row {
   margin: 0 10px; }
 
 .modal.modal--carousel {
-  width: 80% !important;
-  max-height: 90% !important;
   overflow-y: hidden !important; }
 
 .modal-bg-color {

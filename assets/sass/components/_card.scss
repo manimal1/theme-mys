@@ -200,6 +200,10 @@
 }
 
 .card {
+  @include mobile {
+    padding: 20px;
+  }
+  
   &.horizontal.small {
     .card-image {
         @include tablet {
@@ -539,8 +543,6 @@
 
   &__inner-row {
     margin-bottom: 0 !important;
-    // padding: 20px;
-    // background-color: $color-highlight;
   }
   
   &__inner-column {
@@ -557,5 +559,9 @@
   &__column-text {
     text-align: left;
     border-bottom: 1px solid $color-dark-2;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 }

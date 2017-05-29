@@ -47,16 +47,12 @@
         });
 
         $('#interior').modal({
-            startingTop: '5%',
-            endingTop: '5%',
             ready: function(modal, trigger) {
                 $('.main-carousel').flickity('resize');
             },
         });
 
         $('#exterior').modal({
-            startingTop: '5%',
-            endingTop: '5%',
             ready: function(modal, trigger) {
                 $('.main-carousel').flickity('resize');
             }

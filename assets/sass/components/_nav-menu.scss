@@ -22,7 +22,17 @@ nav.main-nav--standard {
 
             a {
                 color: $color-white;
+
+                &:hover {
+                    background-color: $color-main;
+                }
             }
+        }
+    }
+
+    a {
+        &:hover {
+            background-color: $color-highlight;
         }
     }
 
@@ -115,7 +125,8 @@ nav.main-nav--standard {
             margin: 0 auto;
 
             @include desktop {
-                width: 460px;
+                // width: 460px; // this is the size with "luxury gullets" included
+                width: 317px;
             }
 
             .tab {
