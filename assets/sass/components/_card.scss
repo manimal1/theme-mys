@@ -225,6 +225,16 @@
           background-image: url("../images/charter/brazil/exterior-0b.jpg");
         }
       }
+      &.card--annabel-ii {
+        @include tablet {
+          background-image: url("../images/charter/annabel_II/main-2.jpg");
+        }
+      }
+      &.card--moonraker {
+        @include tablet {
+          background-image: url("../images/charter/moonraker/main-1.jpg");
+        }
+      }
       &.card--pida {
         @include tablet{
           background-image: url("../images/charter/pida/main-3.jpg");

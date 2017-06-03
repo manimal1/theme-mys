@@ -1868,6 +1868,12 @@ header.carousel-header {
   .card.horizontal.small .card-image.card--brazil {
     background-image: url("../images/charter/brazil/exterior-0b.jpg"); } }
 @media (min-width: 600px) and (max-width: 991px) {
+  .card.horizontal.small .card-image.card--annabel-ii {
+    background-image: url("../images/charter/annabel_II/main-2.jpg"); } }
+@media (min-width: 600px) and (max-width: 991px) {
+  .card.horizontal.small .card-image.card--moonraker {
+    background-image: url("../images/charter/moonraker/main-1.jpg"); } }
+@media (min-width: 600px) and (max-width: 991px) {
   .card.horizontal.small .card-image.card--pida {
     background-image: url("../images/charter/pida/main-3.jpg"); } }
 @media (min-width: 600px) and (max-width: 991px) {
